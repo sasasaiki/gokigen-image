@@ -1,16 +1,12 @@
 package imageFileServer
 
 import (
-	"net/http"
-
 	"github.com/gorilla/mux"
 )
 
 //CreateRoute 渡されたhandlerとfuncについてrouteを設定する
 func CreateRoute(hf *HandlingFuncI, h *Handlers) *mux.Router {
 	r := mux.NewRouter()
-	//cssやjsを読み込めるようにするHandler
-	r.Handle("/public/", http.StripPrefix("/public/", http.FileServer(http.Dir("public/"))))
 
 	setAPIRoute(r, hf)
 	setRouteExistHandler(r, h)
