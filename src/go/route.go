@@ -44,6 +44,7 @@ func setHandler(r *mux.Router, path string, f func(w http.ResponseWriter, r *htt
 
 //Handlerが必要なrouteの設定
 //templete読み込みなど
+//TODO:structじゃなくて配列で持つようにしよう
 func setRouteExistHandler(r *mux.Router, h *Handlers) {
 	lh := NewLogHandler(h.index)
 	r.Handle("/index", lh)
