@@ -1,5 +1,5 @@
-hash: 3a6c9cf7b5e956a1f9c3f8dff98706b4b7d82a07140ed53f91f0d83885914ffc
-updated: 2017-11-23T16:20:31.716255862+09:00
+hash: 7e6cac5607cadd05c6900062de930a9dbb868a284e0f5fa0d0b7890ede7245bc
+updated: 2017-11-23T20:21:49.363918516+09:00
 imports:
 - name: github.com/gorilla/context
   version: 08b5f424b9271eedf6f9f0ce86cb9396ed337a42
@@ -7,4 +7,6 @@ imports:
   version: 2d5fef06b891c971b14aa6f71ca5ab6c03a36e0e
 - name: github.com/gorilla/websocket
   version: ea4d1f681babbce9545c9c5f3d5194a789c89f5b
+- name: github.com/sasasaiki/image-storage
+  version: 1a37a56245f6e1c3373808f3490aecf2bccaa699
 testImports: []
