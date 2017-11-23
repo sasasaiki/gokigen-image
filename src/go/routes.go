@@ -19,9 +19,10 @@ func CreateRoute(hf *HandlingFuncI, h *Handlers) *mux.Router {
 //Handlerが必要ないrouteの設定
 func setAPIRoute(r *mux.Router, hp *HandlingFuncI) {
 	h := *hp
-	r.HandleFunc("/save", h.save)
-	r.HandleFunc("/get", h.get)
-	r.HandleFunc("/delete", h.delete)
+	r.HandleFunc("/save", h.save).Methods("POST")
+	r.HandleFunc("/get", h.get).Methods("GET")
+	r.HandleFunc("/update", h.update).Methods("PUT")
+	r.HandleFunc("/delete", h.delete).Methods("DELETE")
 }
 
 //Handlerが必要なrouteの設定

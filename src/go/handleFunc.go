@@ -10,6 +10,7 @@ import (
 
 type HandlingFuncI interface {
 	save(w http.ResponseWriter, r *http.Request)
+	update(w http.ResponseWriter, r *http.Request)
 	delete(w http.ResponseWriter, r *http.Request)
 	get(w http.ResponseWriter, r *http.Request)
 }
@@ -22,6 +23,10 @@ type Handlers struct {
 }
 
 func (h *prodHandlingFunc) save(w http.ResponseWriter, r *http.Request) {
+
+}
+
+func (h *prodHandlingFunc) update(w http.ResponseWriter, r *http.Request) {
 
 }
 
