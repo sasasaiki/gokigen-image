@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 
-	"github.com/sasasaiki/image-file-server/src/go"
+	"github.com/sasasaiki/image-storage-server/src/go"
 )
 
 func main() {
