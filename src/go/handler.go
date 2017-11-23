@@ -11,7 +11,7 @@ import (
 
 // Handlers ハンドリングすべき全てのfuncを持つ
 type Handlers struct {
-	index templeteHandler
+	index http.Handler
 }
 
 //NewLogHandler 処理の前にログを吐くようにする
