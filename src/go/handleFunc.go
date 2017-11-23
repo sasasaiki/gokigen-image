@@ -8,6 +8,7 @@ import (
 	"sync"
 )
 
+//HandlingFuncI ハンドリングすべき全てのfuncを持つ
 type HandlingFuncI interface {
 	save(w http.ResponseWriter, r *http.Request)
 	update(w http.ResponseWriter, r *http.Request)
@@ -18,6 +19,7 @@ type HandlingFuncI interface {
 type prodHandlingFunc struct {
 }
 
+// Handlers ハンドリングすべき全てのfuncを持つ
 type Handlers struct {
 	index templeteHandler
 }
