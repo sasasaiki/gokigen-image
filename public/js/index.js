@@ -81,7 +81,6 @@ function init() {
     var $msgBox = $("#chatbox textarea");
     var $messages = $("#messages");
     var $chatBox = $("#chatbox");
-    $chatBox.submit(function () { onClickSubmit($msgBox, $messages); return false; });
 }
 function onClickSubmit($msgBox, $messages) {
     var msg = $msgBox.val().toString();

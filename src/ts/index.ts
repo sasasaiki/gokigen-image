@@ -7,7 +7,7 @@ function init() {
 	let $messages = $("#messages")
 	let $chatBox = $("#chatbox")
 
-	$chatBox.submit(function (): boolean { onClickSubmit($msgBox, $messages); return false; })
+	//$chatBox.submit(function (): boolean { onClickSubmit($msgBox, $messages); return false; })
 }
 
 function onClickSubmit($msgBox: JQuery, $messages: JQuery) {

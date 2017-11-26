@@ -15,8 +15,9 @@ html(lang="ja")
 
 	body
 		ul#messages
-		form#chatbox
+		form#chatbox(method='post', enctype='multipart/form-data',action="/save")
 			textarea
+			input(type="file",name="image")
 			input(type="submit" value="送信")
 
 	include ../templete/_footer.pug

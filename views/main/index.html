@@ -18,8 +18,9 @@
   </header>
   <body>
     <ul id="messages"></ul>
-    <form id="chatbox">
+    <form id="chatbox" method="post" enctype="multipart/form-data" action="/save">
       <textarea></textarea>
+      <input type="file" name="image">
       <input type="submit" value="送信">
     </form>
   </body>
