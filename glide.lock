@@ -1,12 +1,12 @@
-hash: 7e6cac5607cadd05c6900062de930a9dbb868a284e0f5fa0d0b7890ede7245bc
-updated: 2017-11-23T20:21:49.363918516+09:00
+hash: 3beae9e35abf109e2ad5c19697f52628c460a03f874903aa82b765a584f72032
+updated: 2017-11-26T12:23:04.798885922+09:00
 imports:
 - name: github.com/gorilla/context
   version: 08b5f424b9271eedf6f9f0ce86cb9396ed337a42
 - name: github.com/gorilla/mux
-  version: 2d5fef06b891c971b14aa6f71ca5ab6c03a36e0e
-- name: github.com/gorilla/websocket
-  version: ea4d1f681babbce9545c9c5f3d5194a789c89f5b
+  version: 7f08801859139f86dfafd1c296e2cba9a80d292e
+- name: github.com/nfnt/resize
+  version: 891127d8d1b52734debe1b3c3d7e747502b6c366
 - name: github.com/sasasaiki/image-storage
-  version: 1a37a56245f6e1c3373808f3490aecf2bccaa699
+  version: 278b70e9c29d8ebbedf53a66dd17470dd4856301
 testImports: []

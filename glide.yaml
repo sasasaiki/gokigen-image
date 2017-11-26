@@ -1,4 +1,4 @@
 package: github.com/sasasaiki/image-storage-server
 import:
-- package: github.com/gorilla/websocket
+- package: github.com/gorilla/mux
 - package: github.com/sasasaiki/image-storage
