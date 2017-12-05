@@ -6,7 +6,7 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/sasasaiki/image-storage"
+	"github.com/sasasaiki/gkgimg"
 )
 
 //HandlerFuncI ハンドリングすべき全てのfuncを持つ
@@ -20,7 +20,7 @@ type HandlerFuncI interface {
 func (h *prodHandlerFunc) save(w http.ResponseWriter, r *http.Request) {
 	file, fileHeader, e := r.FormFile("image")
 	//本当はハンドラーにもたせた方がいい気がする
-	im := imageStorage.DirImgStorage{}
+	im := gkgimg.DirImgStorage{}
 	e = im.SaveResizedImage(file, fileHeader.Filename, "newFile", "testDir", 400, 0, 90)
 	if e != nil {
 		outputError(&w, e, "fileの保存")
